@@ -8,7 +8,7 @@ import threading
 from PIL import Image, ImageTk
 
 # Initialize OpenAI and ElevenLabs API keys (replace with your actual keys)
-openai.api_key = "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"
+openai.api_key = "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"
 api_key = "sk_2786cd11e51d9e47935039fb2683146394d0d6acd05b88e5"  # Replace with your ElevenLabs API key
 
 # Initialize conversation history
@@ -197,7 +197,7 @@ def resize_background(event=None):
 
 # Create the main Tkinter window
 window = tk.Tk()
-window.title("Talk to the dead")
+window.title("Whispers of STEM Beyond the Grave")
 window.geometry("800x600")  # Set the default window size
 canvas = tk.Canvas(window, width=800, height=600)
 canvas.pack(fill=tk.BOTH, expand=True)
@@ -211,11 +211,11 @@ bg_label = Label(window, image=bg_photo, bd=0)
 bg_label.place(relwidth=1, relheight=1)
 
 # Elements of the GUI
-label = Label(window, text="Ask a Ghost!", font=("Helvetica", 24), fg="white", bg="black")
+label = Label(window, text="Whispers of STEM Beyond the Grave", font=("Helvetica", 24), fg="white", bg="black")
 ghost_entry = Entry(window, font=("Helvetica", 16))
-set_ghost_button = Button(window, text="Set Ghost Persona", command=set_ghost_persona, font=("Helvetica", 14))
+set_ghost_button = Button(window, text="Summon your ghost", command=set_ghost_persona, font=("Helvetica", 14))
 user_entry = Entry(window, font=("Helvetica", 16))
-ask_button = Button(window, text="Ask the Ghost", command=ghost_response, font=("Helvetica", 14))
+ask_button = Button(window, text="Talk to your ghost", command=ghost_response, font=("Helvetica", 14))
 ghost_response_label = Label(window, text="", font=("Helvetica", 16), fg="white", bg="black")
 ghost_response_label.config(wraplength=600)  # Set the wrap length to allow text wrapping
 ghost_image_label = Label(window, bg="black")
