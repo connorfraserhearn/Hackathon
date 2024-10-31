@@ -3,7 +3,7 @@ import openai
 import random
 
 # Initialize OpenAI API key (replace 'your_api_key' with your actual key)
-openai.api_key = ""
+openai.api_key = "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"
 
 # Initialize conversation history
 conversation_history = [
