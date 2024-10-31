@@ -8,8 +8,8 @@ import threading
 from PIL import Image, ImageTk
 
 # Initialize OpenAI and ElevenLabs API keys (replace with your actual keys)
-openai.api_key = "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"
-api_key = "sk_2786cd11e51d9e47935039fb2683146394d0d6acd05b88e5"  # Replace with your ElevenLabs API key
+openai.api_key = ""
+api_key = ""  # Replace with your ElevenLabs API key
 
 # Initialize conversation history
 conversation_history = [
